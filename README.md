@@ -46,7 +46,7 @@ my-portfolio/
 ```
 
 ## 🌐 Live Demo
-Check out the live version of the portfolio [here](https://your-live-demo-link.com).
+Check out the live version of the portfolio [here] https://alimohammedabubakar.github.io/my-portfolio/.
 
 ## 📸 Screenshots
 ![Screenshot 1](https://link-to-your-screenshot.com/screenshot1.png)
