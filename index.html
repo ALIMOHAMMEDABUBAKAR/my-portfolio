@@ -18,7 +18,14 @@
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#contact" class="nav-btn">Contact</a></li>
+            <li>
+                <button id="darkModeToggle" class="toggle-btn">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </li>
+
         </ul>
     </nav>
 
@@ -52,7 +59,7 @@
     </header>
 
     <!-- ABOUT -->
-    <section class="section" id="about">
+    <section class="section hidden" id="about">
         <h2>About Me</h2>
         <p>
             My name is Mohammed Ali Abubakar. I am a Computer Science student with passion
@@ -62,7 +69,7 @@
     </section>
 
     <!-- SKILLS -->
-    <section class="section" id="skills">
+    <section class="section hidden" id="skills">
         <h2>My Skills</h2>
 
         <div class="skills-container">
@@ -75,7 +82,7 @@
     </section>
 
     <!-- SERVICES -->
-    <section class="section" id="services">
+    <section class="section hidden" id="services">
         <h2>Services</h2>
 
         <div class="services-container">
@@ -104,46 +111,97 @@
     </section>
 
     <!-- PROJECTS -->
-    <section class="section" id="projects">
+    <section class="section hidden" id="projects">
         <h2>Projects</h2>
 
         <div class="projects-container">
 
+            <!-- PROJECT 1 -->
             <div class="project-card">
-                <h3>Portfolio Website</h3>
-                <p>A professional personal portfolio website built with HTML & CSS.</p>
+                <img src="images/projects/portfolio.png" alt="Portfolio Website">
 
-                <div class="project-buttons">
-                    <a href="#" class="btn-small">Live Demo</a>
-                    <a href="#" class="btn-small-outline">GitHub</a>
+                <div class="project-content">
+                    <h3>Portfolio Website</h3>
+                    <p>A professional personal portfolio website built with HTML & CSS.</p>
+
+                    <div class="project-buttons">
+                        <a href="https://ALIMOHAMMEDABUBAKAR.github.io/portfolio-website/" target="_blank" class="btn-small">Live Demo</a>
+                        <a href="https://github.com/ALIMOHAMMEDABUBAKAR/portfolio-website" target="_blank" class="btn-small-outline">GitHub</a>
+                    </div>
                 </div>
             </div>
 
+            <!-- PROJECT 2 -->
             <div class="project-card">
-                <h3>Calculator App</h3>
-                <p>A simple calculator application built with HTML, CSS, and JavaScript.</p>
+                <img src="images/projects/calculator.png" alt="Calculator App">
 
-                <div class="project-buttons">
-                    <a href="#" class="btn-small">Live Demo</a>
-                    <a href="#" class="btn-small-outline">GitHub</a>
+                <div class="project-content">
+                    <h3>Calculator App</h3>
+                    <p>A simple calculator application built using HTML, CSS, and JavaScript.</p>
+
+                    <div class="project-buttons">
+                        <a href="#" target="_blank" class="btn-small">Live Demo</a>
+                        <a href="#" target="_blank" class="btn-small-outline">GitHub</a>
+                    </div>
                 </div>
             </div>
 
+            <!-- PROJECT 3 -->
             <div class="project-card">
-                <h3>Student Result System</h3>
-                <p>A Python-based grading and result management system for students.</p>
+                <img src="images/projects/result-system.png" alt="Student Result System">
 
-                <div class="project-buttons">
-                    <a href="#" class="btn-small">Live Demo</a>
-                    <a href="#" class="btn-small-outline">GitHub</a>
+                <div class="project-content">
+                    <h3>Student Result System</h3>
+                    <p>A Python-based system for grading and managing student academic results.</p>
+
+                    <div class="project-buttons">
+                        <a href="#" target="_blank" class="btn-small">Live Demo</a>
+                        <a href="#" target="_blank" class="btn-small-outline">GitHub</a>
+                    </div>
                 </div>
             </div>
 
         </div>
     </section>
 
+    <!-- TESTIMONIALS -->
+    <section class="section hidden" id="testimonials">
+        <h2>Testimonials</h2>
+
+        <div class="testimonials-container">
+
+            <div class="testimonial-card">
+                <p>
+                    "Aliu is very hardworking and dedicated. He delivered my website project
+                    on time and the design was excellent."
+                </p>
+                <h4>- Ibrahim Yusuf Dambe</h4>
+                <span>Client</span>
+            </div>
+
+            <div class="testimonial-card">
+                <p>
+                    "A talented developer with strong skills in web development. His ability
+                    to solve problems is impressive."
+                </p>
+                <h4>- Hauwa Hassan</h4>
+                <span>Business Women</span>
+            </div>
+
+            <div class="testimonial-card">
+                <p>
+                    "Aliu created a very responsive and clean website for our organization.
+                    I highly recommend him for any web project."
+                </p>
+                <h4>- Mrs Charity M. Lazarus</h4>
+                <span>Lecturer / Mentor</span>
+            </div>
+
+        </div>
+    </section>
+
     <!-- CONTACT -->
-    <section class="section" id="contact">
+    <section class="section hidden" id="contact">
     <h2>Contact Me</h2>
 
     <div class="contact-container">
@@ -173,5 +231,8 @@
         <p>© 2026 Mohammed Ali Abubakar. All Rights Reserved.</p>
     </footer>
 
+    <script src="script.js"></script> 
+
 </body>
+
 </html>
