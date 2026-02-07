@@ -4,62 +4,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aliu Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>ALI ABUBAKAR MOHAMMED</h1>
-        <p>Computer Science Student | Web Developer</p>
-        <a href="#contact" class="btn">Contact Me</a>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <h2 class="logo">Aliu<span>.</span></h2>
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact" class="nav-btn">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="hero-text">
+            <h1>Hi, I'm <span>Mohammed Ali Abubakar</span></h1>
+            <p>
+                A Computer Science student and aspiring Web Developer.  
+                I build modern, responsive, and user-friendly websites.
+            </p>
+            <div class="social-icons">
+                <a href="https://github.com/ALIMOHAMMEDABUBAKAR" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/ali_mohammeda_bubakar" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://wa.me/2348031916628" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                 <a href="mailto:aliumohammedabubakar@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">View Projects</a>
+                <a href="assets/Aliu_CV.pdf" class="btn-outline" download>Download CV</a>
+                <a href="#contact" class="btn-outline">Hire Me</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <div class="image-box">
+                <img src="images/profile.jpg" alt="Aliu Profile Photo">
+            </div>
+        </div>
     </header>
 
-    <section class="about">
+    <!-- ABOUT -->
+    <section class="section" id="about">
         <h2>About Me</h2>
         <p>
-            Hi, I am Mohammed Ali Abubakar, a Computer Science student passionate about
-            web development and software engineering. I build modern and responsive websites.
+            My name is Mohammed Ali Abubakar. I am a Computer Science student with passion
+            for Web Development and Software Engineering. I enjoy learning new technologies,
+            solving problems, and building digital solutions.
         </p>
     </section>
 
-    <section class="skills">
+    <!-- SKILLS -->
+    <section class="section" id="skills">
         <h2>My Skills</h2>
-        <ul>
-            <li>HTML & CSS</li>
-            <li>JavaScript (Beginner)</li>
-            <li>Python Programming</li>
-            <li>Git & GitHub</li>
-        </ul>
+
+        <div class="skills-container">
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Python</div>
+            <div class="skill-card">Git & GitHub</div>
+        </div>
     </section>
 
-    <section class="projects">
-        <h2>My Projects</h2>
+    <!-- SERVICES -->
+    <section class="section" id="services">
+        <h2>Services</h2>
 
-        <div class="project-card">
-            <h3>Portfolio Website</h3>
-            <p>A responsive personal portfolio website built with HTML and CSS.</p>
+        <div class="services-container">
+
+            <div class="service-card">
+                <h3>Website Development</h3>
+                <p>I design and develop modern, responsive, and fast websites for individuals and businesses.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Web Application Development</h3>
+                <p>I build web-based systems such as school portals, registration systems, and management platforms.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>UI/UX Design</h3>
+                <p>I create clean and user-friendly interface designs that improve customer experience.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Tech Support</h3>
+                <p>I provide computer troubleshooting, software installation, and general ICT support services.</p>
+            </div>
+
         </div>
-
-        <div class="project-card">
-            <h3>Calculator App</h3>
-            <p>A simple calculator built with HTML, CSS, and JavaScript.</p>
-        </div>
-
-        <div class="project-card">
-            <h3>Student Result System</h3>
-            <p>A Python-based grading and result management system.</p>
-        </div>
-
     </section>
 
-    <section class="contact" id="contact">
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+        <h2>Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>A professional personal portfolio website built with HTML & CSS.</p>
+
+                <div class="project-buttons">
+                    <a href="#" class="btn-small">Live Demo</a>
+                    <a href="#" class="btn-small-outline">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Calculator App</h3>
+                <p>A simple calculator application built with HTML, CSS, and JavaScript.</p>
+
+                <div class="project-buttons">
+                    <a href="#" class="btn-small">Live Demo</a>
+                    <a href="#" class="btn-small-outline">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Student Result System</h3>
+                <p>A Python-based grading and result management system for students.</p>
+
+                <div class="project-buttons">
+                    <a href="#" class="btn-small">Live Demo</a>
+                    <a href="#" class="btn-small-outline">GitHub</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
         <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:aliumohammedabubakar@gmail.com">aliumohammedabubakar@gmail.com</a></p>
-        <p>Phone: <a href="tel:08031916628">08031916628</a></p>
-        <p>Location: Potiskum, Yobe State, Nigerias</p>
+
+        <div class="contact-box">
+            <p><strong>Email:</strong> <a href="mailto:aliumohammedabubakar@gmail.com">aliumohammedabubakar@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:08031916628">08031916628</a></p>
+            <p><strong>Location:</strong> Potiskum, Yobe State, Nigeria</p>
+        </div>
     </section>
 
-    <footer>
+    <!-- FOOTER -->
+    <footer class="footer">
         <p>© 2026 Mohammed Ali Abubakar. All Rights Reserved.</p>
     </footer>
 
