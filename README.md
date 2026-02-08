@@ -37,12 +37,13 @@ I am ALIMOHAMMED ABUBAKAR, a passionate web developer specializing in creating e
 ```
 my-portfolio/
 │   README.md
-│
+│   └── app.js
+├── images
+│   └── app.js
+│   └── app.js
 ├── index.html
-├── styles/
-│   └── main.css
-└── scripts/
-    └── app.js
+├── styles.css
+└── script.js
 ```
 
 ## 🌐 Live Demo
