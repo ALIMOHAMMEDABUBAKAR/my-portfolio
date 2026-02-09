@@ -22,10 +22,25 @@ body {
 }
 
 .calculator h2 {
-    color: white;
+    color: black;
     text-align: center;
     margin-bottom: 15px;
 }
+
+.calculator h3 {
+    color: black;
+    font-style: italic;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Light Mode Default */
+.calculator, .history {
+    background: white;
+    color: black;
+}
+
 
 #display {
     width: 100%;
@@ -35,22 +50,57 @@ body {
     border: none;
     outline: none;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: right;
+    background: #f2f2f2;
+    color: black;
+
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background: #0d1117;
+}
+
+body.dark-mode .calculator {
+    background: dimgray;
+}
+
+body.dark-mode .calculator h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+body.dark-mode .calculator h3 {
+    color: white;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+body.dark-mode #display {
     background: #222;
     color: white;
+}
+
+.sci-buttons {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
 }
 
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
-}
+    gap: 9px;
 }
 
+
 .btn {
-    padding: 18px;
-    font-size: 18px;
+    padding: 8px;
+    font-size: 12px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -61,6 +111,39 @@ body {
 
 .btn:hover {
     background: #444;
+}
+
+.btn-sci {
+    background: #4b3fd8;
+    padding: 5px;
+    font-size: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    margin-bottom: 5px;
+    transition: 0.2s;
+}
+
+.btn-sci:hover {
+    background: #4b3fd8;
+}
+
+.btn-mem {
+    background: #fdcb6e;
+    padding: 5px;
+    font-size: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 5px;
+    transition: 0.2s;
+}
+
+.btn-mem:hover {
+    background: #e1b44c;
 }
 
 .operator {
@@ -80,33 +163,77 @@ body {
 }
 
 .equal {
+    background: darkorange;
     grid-column: span 2; /* Equals button takes two columns */
 }
 
 .equal:hover {
-    background: darkorange;
+    background: orange;
 }
 
 .delete {
-    width: 100%;
-    background: #555;
+    background: #333;
     color: white;
-    padding: 18px;
-    font-size: 18px;
-    border-radius: 10px;
-    margin-top: 10px;
-    transition: 0.2s;
+    grid-column: span 2; /* Delete button takes two columns */
 }
 
 .delete:hover {
-    background: #777;
+    background: #555;
+}
+
+.copy-btn {
+    background: darkorange;
+    grid-column: span 2; /* Copy button takes two columns */
+}
+
+.copy-btn:hover {
+    background: orange;
 }
 
 .dot {
-    background: #666;
+    background: #333;
+    color: white;
 }
 
 .dot:hover {
-    background: #888;
+    background: #555;
+}
+
+.calculator-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.theme-btn {
+    border: none;
+    background: #00b894;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.theme-btn:hover {
+    background: #019874;
+}
+
+#historyList li:hover {
+    background: #333;
+}
+
+@media (max-width: 768px) {
+    .calculator-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
