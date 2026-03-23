@@ -1,0 +1,4 @@
+node_modules/
+optimize_images.py
+*.zip
+.DS_Store
