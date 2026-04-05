@@ -40,25 +40,40 @@ I am Mohammed Ali Abubakar, a Computer Science student with a passion for Web De
 ## 📁 Project Structure
 ```
 my-portfolio/
-│   README.md
-│   index.html
-│
-├── assets/
-│   ├── docs/
+.
+├── LICENSE
+├── README.md
+├── assets
+│   ├── docs
 │   │   ├── certificates.pdf
 │   │   └── cv.pdf
-│   └── images/
+│   ├── icons
+│   │   └── favicon.ico
+│   └── images
+│       ├── profile.jpg
 │       ├── project1.png
 │       ├── project2.png
 │       ├── project3.png
-│       ├── project4.png
-│       └── profile.jpg
-│
-├── css/
+│       └── project4.png
+├── css
 │   └── style.css
-│
-└── js/
-    └── script.js
+├── index.html
+├── js
+│   └── script.js
+└── projects
+    ├── calculator-app
+    │   ├── index.html
+    │   ├── script.js
+    │   └── style.css
+    ├── portfolio-v1
+    │   ├── index.html
+    │   ├── script.js
+    │   └── style.css
+    └── student-result-system
+        ├── index.html
+        ├── script.js
+        └── style.css
+
 ```
 
 ## 🌐 Live Demo
